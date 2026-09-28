@@ -13,6 +13,7 @@ const App = express();
 App.use(
   cors({
     origin: "https://survey-jade-pi.vercel.app",
+    credentials: true,
   }),
 );
 App.use(express.json());
