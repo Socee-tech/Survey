@@ -10,12 +10,7 @@ dotenv.config();
 connectDB();
 
 const App = express();
-App.use(
-  cors({
-    origin: "https://survey-jade-pi.vercel.app",
-    credentials: true,
-  }),
-);
+App.use(cors());
 App.use(express.json());
 
 App.use("/api/auth", authRoutes);
