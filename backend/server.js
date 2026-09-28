@@ -12,7 +12,7 @@ connectDB();
 const App = express();
 App.use(
   cors({
-    origin: "*",
+    origin: "https://survey-jade-pi.vercel.app",
   }),
 );
 App.use(express.json());
